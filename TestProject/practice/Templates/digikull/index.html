@@ -1,0 +1,259 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digikull- Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href={%static '/css/style.css'%}> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{% url 'index' %}">
+          <img src={%static '/img/logo.png'%} width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+         Digikull
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'product' %}">Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'service1' %}">Service 1</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{% url 'service2' %}">Service 2</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+<!-- Main Content -->
+<div class="main">
+    <div class="jumbotron">
+        <h1 class="display-4 text-center waviy">Welcome to <span style="--i:1">D</span>
+          <span  style="--i:2">I</span>
+          <span  style="--i:3">G</span>
+          <span style="--i:4">i</span>
+          <span style="--i:5">k</span>
+          <span style="--i:6">U</span>
+          <span style="--i:7">l</span>
+          <span style="--i:8">l</span></h1>
+        <p class="lead text-center mt-30">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, repudiandae dolore! 
+        </p>
+        <div class="text-center">
+        <a class="btn btn-primary btn-lg" href="{% url 'product' %}" role="button">Product Page</a>
+        <a class="btn btn-dark btn-lg" href="{% url 'service1' %}" role="button">Service Page</a>
+      </div>
+      </div>
+      <!-- /jumbotron  -->
+      <!-- cards -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm mb-10">
+            <div class="card" style="width: 18rem;">
+              <img src="https://source.unsplash.com/286x180/?desktop" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-light rounded-left">View</button>
+                  <button type="button" class="btn btn-light rounded-right">Edit</button>
+                    
+                  </div>
+                  <div class="input-group">
+                   <span>9 min</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mb-10">
+            <div class="card" style="width: 18rem;">
+              <img src="https://source.unsplash.com/286x180/?nobile" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-light rounded-left">View</button>
+                  <button type="button" class="btn btn-light rounded-right">Edit</button>
+                    
+                  </div>
+                  <div class="input-group">
+                   <span>9 min</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mb-10">
+            <div class="card" style="width: 18rem;">
+              <img src="https://source.unsplash.com/286x180/?macbook" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-light rounded-left">View</button>
+                  <button type="button" class="btn btn-light rounded-right">Edit</button>
+                    
+                  </div>
+                  <div class="input-group">
+                   <span>9 min</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+</div>
+<!-- /main content -->
+    <!-- footer start  -->
+  
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+   
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h3 class="text-uppercase mb-30">Digikull</h3>
+
+          
+            
+           <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1 fb-btn" href="#!" role="button"
+        ><i class="fa fa-facebook"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1 twitter-btn" href="#!" role="button"
+        ><i class="fa fa-twitter"></i
+      ></a>
+
+      <!-- Youtube -->
+      <a class="btn btn-outline-light btn-floating m-1 yt-btn" href="#!" role="button"
+        ><i class="fa fa-youtube"></i
+      ></a>
+
+      
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1 github-btn" href="#!" role="button"
+        ><i class="fa fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Services</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="{% url 'service1' %}" class="text-white">Service 1</a>
+            </li>
+            <li>
+              <a href="{% url 'service2' %}" class="text-white">Service 2</a>
+            </li>
+            
+            <li>
+              <a href="#!" class="text-white">Service 3</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Company</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="{% url 'product' %}" class="text-white">Products</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">About US</a>
+            </li>
+            <li>
+              <a href="{% url 'contact' %}" class="text-white">Contact Us</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Help</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Faq</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Pricing</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Terms</a>
+            </li>
+          
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://digikull.com/">Digikull.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+    <!-- footer end -->
+    <!-- script start -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- script end -->
+</body>
+</html>

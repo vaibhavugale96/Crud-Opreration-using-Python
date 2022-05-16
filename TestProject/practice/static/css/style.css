@@ -1,0 +1,164 @@
+table { 
+    width: 750px; 
+    border-collapse: collapse; 
+    margin:50px auto;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+   
+
+
+    }
+
+tr:nth-of-type(odd) { 
+    background: #eee; 
+    }
+
+th { 
+    background: #3498db; 
+    color: white; 
+    font-weight: bold; 
+    }
+
+td, th { 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+    font-size: 18px;
+    }
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    table { 
+          width: 100%; 
+    }
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr { border: 1px solid #ccc; }
+    
+    td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        /* Label the data */
+        content: attr(data-column);
+
+        color: #000;
+        font-weight: bold;
+    }
+
+}
+
+.btn-group button{
+    border: 1px solid black;
+ }
+ .btn-group button:hover{
+     border: 1px solid black;
+  }
+ .mb-10{
+     margin-bottom: 10px;
+ }
+ .mb-30{margin-bottom: 30px;}
+ .mt-30{
+     margin-top: 30px;
+ }
+ h2 span{
+     border-bottom: 3px solid #007BFF;
+ }
+ footer{
+     border-top: 5px solid #007BFF;
+     margin-top: 20px;
+ }
+ .devide{
+     border-bottom: 1px solid rgba(0,0,0,.1);padding-bottom: 20px ;
+ 
+ }
+ .grey{
+     color: grey;
+ }
+ .green{
+     color: green;
+ }
+ .red{
+     color: red;
+ }
+ .fb-btn:hover{
+     background-color: #4267B2;
+     color: white;
+     border-color: transparent;
+ 
+ }
+ .twitter-btn:hover{
+     background-color: #1DA1F2;
+     color: white;
+     border-color: transparent;
+ 
+ }
+ .yt-btn:hover{
+     background-color: red;
+     color: white;
+     border-color: transparent;
+ 
+ }
+ .github-btn:hover{
+     background-color: #171515;
+     color: white;
+     border-color: transparent;
+ 
+ }
+ 
+ 
+ .jumbotron{
+     background-color: #282A35;
+     color:white ;
+ }
+ 
+ 
+ .waviy {
+   position: relative;
+   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+   font-size: 60px;
+ }
+ .waviy span {
+   font-family: 'Alfa Slab One', cursive;
+   position: relative;
+   display: inline-block;
+   color: #fff;
+   text-transform: uppercase;
+   animation: waviy 1s infinite;
+   animation-delay: calc(.1s * var(--i));
+   
+ }
+ @keyframes waviy {
+   0%,40%,100% {
+     transform: translateY(0)
+   }
+   20% {
+     transform: translateY(-20px)
+   }
+ }

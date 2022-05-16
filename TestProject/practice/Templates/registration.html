@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href={%static '/css/registration.css'%}>
+
+</head>
+<style>
+    .heading{
+    text-align: center;
+    background-color: #0F87FF;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    margin-top: -20px;
+
+}</style>
+<body>
+    <div class='Tipcalc'>
+        <div class='container'>  
+            <div class="heading">
+                <h2>Add Student</h2>
+            </div>
+            <div class="calculate">
+<form action="" method="post">
+ 
+    {% csrf_token %}
+    {{form}}
+    
+<input type="submit">
+   
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
